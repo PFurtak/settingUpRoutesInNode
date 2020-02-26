@@ -1,0 +1,6 @@
+<h3>Foo partial</h3>
+<ul>
+  ${arrayOfData.map(item => `
+  <li>${item.model}: ${item.drive}</li>
+  ` ).join('')}
+</ul>
