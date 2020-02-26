@@ -3,10 +3,14 @@ const express = require('express'),
 
 router.get('/', (req, res) => {
   const cats = `<h1>Meow</h1>`;
-  res
-    .status(200)
-    .send(cats)
-    .end();
+  res.render('template', {
+    locals: {
+      title: 'Cat Page!'
+    },
+    partials: {
+      partial: 'partial-cat'
+    }
+  });
 });
 
 module.exports = router;
