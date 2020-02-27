@@ -14,10 +14,12 @@ const rootController = require('./routes/index'),
   catsController = require('./routes/cats'),
   dogsController = require('./routes/dogs'),
   catsanddogsController = require('./routes/catsanddogs'),
-  personController = require('./routes/person');
+  personController = require('./routes/person'),
+  ceosController = require('./routes/ceos');
 
 app.use('/', rootController);
 app.use('/cats', catsController);
 app.use('/dogs', dogsController);
 app.use('/catsanddogs', catsanddogsController);
 app.use('/person', personController);
+app.use('/ceos', ceosController);
